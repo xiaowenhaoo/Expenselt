@@ -24,5 +24,12 @@ namespace Expenselt
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //view expense report
+            ExpenseReprotPage expenseReportPage = new ExpenseReprotPage(this.peopleListBox.SelectedItem);
+            this.NavigationService.Navigate(expenseReportPage);
+        }
     }
 }

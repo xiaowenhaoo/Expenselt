@@ -24,5 +24,10 @@ namespace Expenselt
         {
             InitializeComponent();
         }
+
+        public ExpenseReprotPage(object data):this()
+        {
+            this.DataContext = data;
+        }
     }
 }
